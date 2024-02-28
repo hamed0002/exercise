@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sumEqualzero($arr){
+    let newArray = [];
+    for ($i = 0; $i < $arr.length; $i++){
+        for ($j = $i+1 ;$i < $arr.length;$j++ ){
+            for ($k = $j+1; $k < $arr.length;$k++){
+                $sum = $arr[$i] + $arr[$j] + $arr[$k];
+                if($sum == 0){
+                    newArray.push([$arr[$i],$arr[$j],$arr[$k]]);
+                }
+            }
+        }
+    }
+    console.log(($newArray));
+};
+sumEqualzero([1,2,-3]);
+    </script>
+    
+</body>
+</html>
